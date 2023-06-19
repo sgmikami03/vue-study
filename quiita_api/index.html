@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>quiita_api</h2>
+        <p><input type="text" v-model="keyword"></p>
+        <ul v-for="item in items">
+            <li><a v-bind:href="item.url">{{ item.title }} likes: {{item.likes_count}}</a></li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.js">
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="main.js"></script>
+</body>
+</html>
